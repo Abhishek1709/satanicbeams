@@ -33,7 +33,7 @@
 
 			var distanceCount = 0;
 
-			var score = 0;
+			var score = 171;
 
 			var FPS = 35;
 			setInterval(function() {
