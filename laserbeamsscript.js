@@ -619,7 +619,7 @@
 				score=0;
 				// laserbeamImage=colorize(laserbeamImage, Math.floor( Math.random()*7  )*60 +30 );
 
-				timeFrame=0;
+				timeFrame=251;
 
 			}
 			function clicked(e)
