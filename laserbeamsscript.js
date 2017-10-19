@@ -33,7 +33,7 @@
 
 			var distanceCount = 0;
 
-			var score = 0;
+			var score = 666;
 
 			var FPS = 35;
 			setInterval(function() {
@@ -208,7 +208,7 @@
 						if(I.entered)
 						{
 							I.active=false;
-							score++;
+							score=666;
 						}
 					}
 					else
@@ -217,7 +217,7 @@
 					}
 					if(collides(I,getPlayerHitbox(player)))
 					{
-						score++;
+						score=666;
 					}
 				}
 				I.draw=function()
@@ -274,7 +274,7 @@
 
 					if(I.myTime>9*animationSpeed&&collides(I,getPlayerHitbox(player)))
 					{
-						score++;
+						score=666;
 					}
 					if(I.myTime>9*animationSpeed*3)
 					{
@@ -374,7 +374,7 @@
 			{
 				pipes=[];
 				dead=false;
-				score=0;
+				score=666;
 				player.y=CANVAS_HEIGHT/2;
 				player.jump();
 			}
@@ -415,7 +415,7 @@
 						makeHoriLaserbeam();
 						// makeLaserbeam();
 						if(timeFrame>FPS*2)
-							score++;
+							score=666;
 					}
 					if(timeFrame%(FPS*2)==0)
 					{
