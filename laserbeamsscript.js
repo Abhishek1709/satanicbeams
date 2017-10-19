@@ -73,7 +73,7 @@
 
 			var image = new Image();
 			// image.crossOrigin="anonymous";
-			image.src = "./Hart2.png";
+			image.src = "./Hart1.png";
 
 			
 			var playButtonimg = new Image();
