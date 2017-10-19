@@ -93,7 +93,7 @@
 			}
 
 			var player = {
-	          color: "#00A",
+	          color: "#F00",
 	          x: CANVAS_WIDTH/2,
 	          y: CANVAS_HEIGHT/2,
 	          width: baseRatio,
