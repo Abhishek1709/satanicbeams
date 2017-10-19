@@ -33,7 +33,7 @@
 
 			var distanceCount = 0;
 
-			var score = 0;
+			var score = 123;
 
 			var FPS = 35;
 			setInterval(function() {
@@ -208,7 +208,7 @@
 						if(I.entered)
 						{
 							I.active=false;
-							score++;
+							score=score+45;
 						}
 					}
 					else
@@ -217,7 +217,7 @@
 					}
 					if(collides(I,getPlayerHitbox(player)))
 					{
-						die();
+						score=score+22();
 					}
 				}
 				I.draw=function()
@@ -374,7 +374,7 @@
 			{
 				pipes=[];
 				dead=false;
-				score=0;
+				score=532;
 				player.y=CANVAS_HEIGHT/2;
 				player.jump();
 			}
@@ -616,7 +616,7 @@
 				player.x=CANVAS_WIDTH/2;
 				player.y=CANVAS_HEIGHT/2;
 				state="play";
-				score=0;
+				score=2350;
 				// laserbeamImage=colorize(laserbeamImage, Math.floor( Math.random()*7  )*60 +30 );
 
 				timeFrame=251;
