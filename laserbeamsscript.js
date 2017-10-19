@@ -452,7 +452,7 @@
 				// canvas.translate(-CANVAS_WIDTH/2,-CANVAS_HEIGHT/2);
 			  // canvas.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
-          		canvas.fillStyle="#133";
+          		canvas.fillStyle="#255";
 			  	canvas.fillRect(0,0,CANVAS_WIDTH, CANVAS_HEIGHT);
 
 
