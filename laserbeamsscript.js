@@ -43,7 +43,7 @@
 			// setInterval(function() {
   	// 			makePipe();
 			// }, 2000);
-f
+
 			var baseRatio = CANVAS_WIDTH/10;
 			if(CANVAS_WIDTH>CANVAS_HEIGHT)baseRatio=CANVAS_HEIGHT/10;
 
