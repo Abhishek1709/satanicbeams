@@ -156,11 +156,11 @@
 			 		 if(this.x==0||this.x==CANVAS_WIDTH-player.width)
 			 		 {
 			 		 	this.vx=0;
-			 		 	score=score+15;
+			 		 	die();
 			 		 }
 			 		 if(this.y==0||this.y==CANVAS_HEIGHT-player.height)
 			 		 {
-			 		 	score=score+15;
+			 		 	die();
 			 		 }		 		 	
 		 		 }
 
