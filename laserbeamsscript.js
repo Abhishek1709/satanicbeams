@@ -8,7 +8,6 @@
 			var screenDiv = document.getElementById("gameScreen");
 			if(screenDiv)
 			{
-				CANVAS_WIDTH = parseInt( screenDiv.style.width);
 				CANVAS_HEIGHT = parseInt(screenDiv.style.height);
 				superview=screenDiv;
 			}
@@ -157,11 +156,11 @@
 			 		 if(this.x==0||this.x==CANVAS_WIDTH-player.width)
 			 		 {
 			 		 	this.vx=0;
-			 		 	die();
+			 		 	score=score+15;
 			 		 }
 			 		 if(this.y==0||this.y==CANVAS_HEIGHT-player.height)
 			 		 {
-			 		 	die();
+			 		 	score=score+15;
 			 		 }		 		 	
 		 		 }
 
@@ -218,7 +217,7 @@
 					}
 					if(collides(I,getPlayerHitbox(player)))
 					{
-						score++;
+						score=score+15;
 					}
 				}
 				I.draw=function()
@@ -275,7 +274,7 @@
 
 					if(I.myTime>9*animationSpeed&&collides(I,getPlayerHitbox(player)))
 					{
-						score++;
+						score=score+25;
 					}
 					if(I.myTime>9*animationSpeed*3)
 					{
