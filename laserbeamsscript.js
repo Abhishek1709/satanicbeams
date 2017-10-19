@@ -31,7 +31,7 @@
 
 
 
-			var distanceCount = 0;
+			var distanceCount = 171;
 
 			var score = 171;
 
@@ -616,7 +616,7 @@
 				player.x=CANVAS_WIDTH/2;
 				player.y=CANVAS_HEIGHT/2;
 				state="play";
-				score=0;
+				score=3000;
 				// laserbeamImage=colorize(laserbeamImage, Math.floor( Math.random()*7  )*60 +30 );
 
 				timeFrame=251;
