@@ -1,5 +1,6 @@
 
 
+
 			var superview = 'body';
 			var CANVAS_WIDTH =  window.innerWidth-30;
 			var CANVAS_HEIGHT =  window.innerHeight-30;
@@ -33,7 +34,7 @@
 
 			var distanceCount = 0;
 
-			var score = 123;
+			var score = 0;
 
 			var FPS = 35;
 			setInterval(function() {
@@ -73,7 +74,7 @@
 
 			var image = new Image();
 			// image.crossOrigin="anonymous";
-			image.src = "./Hart1.png";
+			image.src = "./Hart2.png";
 
 			
 			var playButtonimg = new Image();
@@ -208,7 +209,7 @@
 						if(I.entered)
 						{
 							I.active=false;
-							score=score+45;
+							score=score+15;
 						}
 					}
 					else
@@ -217,7 +218,7 @@
 					}
 					if(collides(I,getPlayerHitbox(player)))
 					{
-						score=score+22();
+						score++;
 					}
 				}
 				I.draw=function()
@@ -374,7 +375,7 @@
 			{
 				pipes=[];
 				dead=false;
-				score=532;
+				score=0;
 				player.y=CANVAS_HEIGHT/2;
 				player.jump();
 			}
@@ -415,7 +416,7 @@
 						makeHoriLaserbeam();
 						// makeLaserbeam();
 						if(timeFrame>FPS*2)
-							score=score+56;
+							score++;
 					}
 					if(timeFrame%(FPS*2)==0)
 					{
@@ -488,7 +489,7 @@
          		}
          		else if (state=="dead")
          		{
-         			
+         			drawGameOver();
          			
          			if(timeFrame*1.0/FPS<1)
          			{	
@@ -616,10 +617,10 @@
 				player.x=CANVAS_WIDTH/2;
 				player.y=CANVAS_HEIGHT/2;
 				state="play";
-				score=2350;
+				score=0;
 				// laserbeamImage=colorize(laserbeamImage, Math.floor( Math.random()*7  )*60 +30 );
 
-				timeFrame=251;
+				timeFrame=0;
 
 			}
 			function clicked(e)
