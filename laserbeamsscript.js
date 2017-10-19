@@ -43,7 +43,7 @@
 			// setInterval(function() {
   	// 			makePipe();
 			// }, 2000);
-
+f
 			var baseRatio = CANVAS_WIDTH/10;
 			if(CANVAS_WIDTH>CANVAS_HEIGHT)baseRatio=CANVAS_HEIGHT/10;
 
@@ -208,7 +208,7 @@
 						if(I.entered)
 						{
 							I.active=false;
-							score=score+15;
+							score++;
 						}
 					}
 					else
@@ -217,7 +217,7 @@
 					}
 					if(collides(I,getPlayerHitbox(player)))
 					{
-						score=score+15;
+						score++;
 					}
 				}
 				I.draw=function()
@@ -274,7 +274,7 @@
 
 					if(I.myTime>9*animationSpeed&&collides(I,getPlayerHitbox(player)))
 					{
-						score=score+25;
+						score++;
 					}
 					if(I.myTime>9*animationSpeed*3)
 					{
