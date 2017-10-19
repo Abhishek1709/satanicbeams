@@ -274,7 +274,7 @@
 
 					if(I.myTime>9*animationSpeed&&collides(I,getPlayerHitbox(player)))
 					{
-						die();
+						score++;
 					}
 					if(I.myTime>9*animationSpeed*3)
 					{
