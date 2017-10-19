@@ -415,7 +415,7 @@
 						makeHoriLaserbeam();
 						// makeLaserbeam();
 						if(timeFrame>FPS*2)
-							score++;
+							score=score+56;
 					}
 					if(timeFrame%(FPS*2)==0)
 					{
@@ -488,7 +488,7 @@
          		}
          		else if (state=="dead")
          		{
-         			drawGameOver();
+         			
          			
          			if(timeFrame*1.0/FPS<1)
          			{	
